@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile and run",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "g++ -std=c++17 \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\" < \"C:\\coding-cpp\\input.txt\" > \"C:\\coding-cpp\\output.txt\""
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
