@@ -17,7 +17,9 @@ void print2 (int n) {
 }
 int main (){
     int n;
-    cin>>n;
+    while(
+    cin>>n){
     print2(n);
+     cout << "\n";}
     return 0;
 }
